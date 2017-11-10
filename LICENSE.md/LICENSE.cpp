@@ -9,34 +9,34 @@ void InChe(){
 	while(i>=0 && j>=0){	
 		if(i==0)
 		{
-			che[i][j] = mat[i][j];
+			che[i][j] = buf[i][j];
 			if(j!=0) j--;
 			else
 			{
-				che[i][j] = mat[i][j];
+				che[i][j] = buf[i][j];
 				j--;
 			 } 
 		 }	 
 		 else
 		 	if(j==0)
 		 	{
-		 		che[i][j] = mat[i][j];
+		 		che[i][j] = buf[i][j];
 		 		if(i!=0) i--;
 		 		else
 		 		{
-		 			che[i][j] = mat[i][j];
+		 			che[i][j] = buf[i][j];
 					i--;	
 				 }
 			 } 
 			else
-				if(mat[i-1][j]>mat[i][j-1])
+				if(buf[i-1][j]>buf[i][j-1])
 				{
 					che[i-1][j]=buf[i-1][j];
 					i--;
 				}
 				else
 				{
-					che[i][j] = mat[i][j];
+					che[i][j] = buf[i][j];
 					j--;
 				}			  	
 }
