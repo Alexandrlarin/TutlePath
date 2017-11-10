@@ -29,7 +29,7 @@ void InChe(){
 				 }
 			 } 
 			else
-				if(buf[i-1][j]>buf[i][j-1])
+				if(mat[i-1][j]>mat[i][j-1])
 				{
 					che[i-1][j]=buf[i-1][j];
 					i--;
